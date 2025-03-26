@@ -1,25 +1,5 @@
 .contact-btn a {
-    width: 170px;
-    height: 41px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 15px;
-    border-radius: 6px;
-    background-color: #4762ff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 158%;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    transition: all 0.4s;
-  }
-  .contact-btn a:hover {
-    cursor: pointer;
-    color: #4762ff;
-    background-color: white;
-    border: 1px solid #4762ff;
+   @include BtnStyle();
   }
   .contact-btn a:active {
     color: black;

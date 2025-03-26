@@ -1,8 +1,6 @@
 .header-top {
+  @include Display();
     height: 72px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     padding: 26px;
     gap: 20px;
     border-bottom: 1px solid #3333331a;
@@ -12,46 +10,43 @@
     align-items: center;
     gap: 8px;
   }
-  
+   
   .header-top p {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #333333b2;
+    color: var(--clr-gray-opacity70);
   }
   
   .header-top p ~ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #333333b2;
+    color: var(--clr-gray-opacity70);
     transition: all 0.3s;
   }
   
   .header-top p ~ a:hover {
     cursor: pointer;
-    color: #4762ff;
+    color: var(--clr-hover);
   }
   
   .header-top-wrapper {
     border-left: 1px solid #3333331a;
     padding-left: 9px;
     padding-right: 9px;
-    display: flex;
-    align-items: center;
+    @include Display($Justify:start);
   }
   
   .header-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   @include Display($Justify:space-between);
     padding: 18px 0;
   }
   
   .header-bottom div {
-    display: flex;
-    align-items: center;
+   @include Display($Justify:start);
   }
+
   .header-navbar {
     display: flex;
     gap: 46px;
@@ -63,9 +58,9 @@
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: #333333;
+    color: var(--clr-link);
   }
   .header-navbar a:hover {
     cursor: pointer;
-    color: #4762ff;
+    color: var(--clr-hover);
   }

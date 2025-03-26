@@ -36,8 +36,8 @@
     margin-top: 16px;
     padding: 15px 30px;
     border-radius: 8px;
-    background-color: #4762ff;
-    color: #ffffff;
+    background-color: var(--clr-hover);
+    color: var(--clr-white);
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
@@ -46,12 +46,12 @@
   }
   .image-title a:hover {
     cursor: pointer;
-    color: #4762ff;
+    color: var(--clr-hover);
     background-color: white;
     border: 1px solid #4762ff;
   }
   .image-title a:active {
-    color: black;
-    background-color: #4762ff;
+    color: var(--clr-black);
+    background-color: var(--clr-hover);
     border: 1px solid black;
   }

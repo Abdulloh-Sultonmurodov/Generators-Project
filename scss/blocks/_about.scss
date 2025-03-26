@@ -19,11 +19,10 @@
     letter-spacing: 0%;
   }
   .about-text-wrapper a {
+    @include Display($Justify: start);
     width: 196px;
     height: 52px;
     margin: 79px 0 0 344px;
-    display: flex;
-    align-items: center;
     gap: 6px;
     padding: 15px 48px;
     border-radius: 6px;
@@ -32,17 +31,17 @@
     font-size: 18px;
     line-height: 100%;
     text-align: center;
-    color: white;
+    color: var(--clr-white);
     transition: all 0.4s;
   }
   .about-text-wrapper a:hover {
     cursor: pointer;
-    color: #4762ff;
-    background-color: white;
-    border: 1px solid #4762ff;
+    color: var(--clr-hover);
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-hover);
   }
   .about-text-wrapper a:active {
-    color: black;
-    background-color: #4762ff;
-    border: 1px solid black;
+    color: var(--clr-black);
+    background-color: var(--clr-hover);
+    border: 1px solid var(--clr-black);
   }

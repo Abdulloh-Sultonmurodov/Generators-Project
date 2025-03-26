@@ -1,0 +1,32 @@
+@mixin Display($Justify: end, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $Justify;
+}
+    
+@mixin BtnStyle($Width: 170px) {
+  width: $Width;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #4762ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 158%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  transition: all 0.4s;
+
+  &:hover {
+    cursor: pointer;
+    color: #4762ff;
+    background-color: white;
+    border: 1px solid #4762ff;
+  }
+}
