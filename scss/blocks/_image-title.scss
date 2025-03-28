@@ -15,34 +15,24 @@
     gap: 16px;
   }
   .image-title h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
+    @include TextStyle($fw: 700, $fs: 40px, $lh: 100%, $clr:var(--clr-white));
     text-transform: uppercase;
-    color: #ffffff;
   }
   .image-title p {
+    @include TextStyle($fw: 400, $fs: 24px, $lh: 100%, $clr:var(--clr-white));
     width: 496px;
     height: 87px;
     padding: 16px 0 32px 0;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    color: #ffffffcc;
   }
   .image-title a {
+    @include TextStyle($fw: 600, $fs: 18px, $lh: 100%, $clr:var(--clr-white));
     width: 196px;
     height: 52px;
     margin-top: 16px;
-    padding: 15px 30px;
+    padding: 15px 30px; 
     border-radius: 8px;
     background-color: var(--clr-hover);
-    color: var(--clr-white);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 100%;
     text-align: center;
-    transition: all 0.4s;
   }
   .image-title a:hover {
     cursor: pointer;

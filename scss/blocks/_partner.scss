@@ -1,0 +1,11 @@
+.partner-title {
+    @include TextStyle($fw:700, $fs:48px, $lh:100%, $clr:var(--clr-link));
+    display: flex;
+    justify-content: center;
+    padding: 67px 0 31px 0;
+    text-align: center;
+}
+.partner-logos img {
+    margin-left: 50px;
+    margin-bottom: 57px;
+}

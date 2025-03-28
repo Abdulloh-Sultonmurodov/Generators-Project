@@ -1,10 +1,17 @@
 @mixin Display($Justify: end, $direction: row) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: center;
-    justify-content: $Justify;
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: $Justify;
 }
-    
+@mixin TextStyle($fw, $fs, $lh, $clr,) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $clr;
+  transition: all 0.3s;
+}
+
 @mixin BtnStyle($Width: 170px) {
   width: $Width;
   height: 41px;
@@ -22,7 +29,7 @@
   vertical-align: middle;
   color: white;
   transition: all 0.4s;
-
+  
   &:hover {
     cursor: pointer;
     color: #4762ff;

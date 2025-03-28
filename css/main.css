@@ -33,6 +33,7 @@
   --clr-white: #fff;
   --clr-hover: #4762FF;
   --clr-link: #333333;
+  --clr-gray-opacity10: #3333331A;
   --clr-gray-opacity60: #33333399;
   --clr-gray-opacity70: #333333B2;
   --clr-gray-opacity80: #333333CC;
@@ -43,13 +44,20 @@
   margin: 0 auto;
 }
 
+.header-site {
+  position: fixed;
+  top: 0;
+  background-color: var(--clr-white);
+  width: 100%;
+}
+
 .header-top {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
   height: 72px;
-  padding: 26px;
+  padding: 26px 170px;
   gap: 20px;
   border-bottom: 1px solid rgba(51, 51, 51, 0.1019607843);
 }
@@ -65,6 +73,7 @@
   font-size: 16px;
   line-height: 100%;
   color: var(--clr-gray-opacity70);
+  transition: all 0.3s;
 }
 
 .header-top p ~ a {
@@ -94,8 +103,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 18px 0;
+  border-bottom: 1px solid var(--clr-gray-opacity10);
 }
 
 .header-bottom div {
@@ -114,14 +124,19 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
+  color: var(--clr-link);
+  transition: all 0.3s;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: var(--clr-link);
 }
 
 .header-navbar a:hover {
   cursor: pointer;
   color: var(--clr-hover);
+}
+
+.image-section-wrapper {
+  margin-top: 149px;
 }
 
 .image-section-wrapper {
@@ -146,33 +161,35 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
+  color: var(--clr-white);
+  transition: all 0.3s;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .image-title p {
-  width: 496px;
-  height: 87px;
-  padding: 16px 0 32px 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--clr-white);
+  transition: all 0.3s;
+  width: 496px;
+  height: 87px;
+  padding: 16px 0 32px 0;
 }
 
 .image-title a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--clr-white);
+  transition: all 0.3s;
   width: 196px;
   height: 52px;
   margin-top: 16px;
   padding: 15px 30px;
   border-radius: 8px;
   background-color: var(--clr-hover);
-  color: var(--clr-white);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
   text-align: center;
-  transition: all 0.4s;
 }
 
 .image-title a:hover {
@@ -246,19 +263,23 @@
 }
 
 .about-text-wrapper h2 {
-  width: 542px;
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
+  color: var(--clr-black);
+  transition: all 0.3s;
+  width: 542px;
   letter-spacing: 0%;
 }
 
 .about-text-wrapper p {
-  width: 542px;
-  padding: 16px 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+  color: var(--clr-black);
+  transition: all 0.3s;
+  width: 542px;
+  padding: 16px 0;
   letter-spacing: 0%;
 }
 
@@ -267,6 +288,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--clr-white);
+  transition: all 0.3s;
   width: 196px;
   height: 52px;
   margin: 79px 0 0 344px;
@@ -274,12 +300,7 @@
   padding: 15px 48px;
   border-radius: 6px;
   background-color: #4762ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
   text-align: center;
-  color: var(--clr-white);
-  transition: all 0.4s;
 }
 
 .about-text-wrapper a:hover {
@@ -303,11 +324,13 @@
 }
 
 .catalog-title-name {
-  width: 540px;
-  height: 59px;
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
+  color: var(--clr-black);
+  transition: all 0.3s;
+  width: 540px;
+  height: 59px;
   text-align: center;
 }
 
@@ -368,4 +391,57 @@
   color: #4762ff;
   background-color: white;
   border: 1px solid #4762ff;
+}
+
+.cabin-design-section {
+  height: 636px;
+}
+
+.cabin {
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cabin__wrapper {
+  width: 873px;
+  height: 150px;
+}
+.cabin__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 100%;
+  color: var(--clr-link);
+  transition: all 0.3s;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.cabin__content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--clr-gray-opacity80);
+  transition: all 0.3s;
+  text-align: center;
+}
+.cabin__img {
+  padding-right: 10px;
+}
+
+.partner-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--clr-link);
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  padding: 67px 0 31px 0;
+  text-align: center;
+}
+
+.partner-logos img {
+  margin-left: 50px;
+  margin-bottom: 57px;
 }/*# sourceMappingURL=main.css.map */

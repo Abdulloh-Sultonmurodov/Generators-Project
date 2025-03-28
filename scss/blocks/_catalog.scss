@@ -2,11 +2,9 @@
   @include Display($direction: column);
 }
 .catalog-title-name {
+    @include TextStyle($fw: 700, $fs: 48px, $lh: 100%, $clr:var(--clr-black));
     width: 540px;
     height: 59px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
     text-align: center;
     }
 

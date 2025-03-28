@@ -1,0 +1,28 @@
+.cabin-design-section {
+    height: 636px;
+}
+.cabin {
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__wrapper {
+        width: 873px;
+        height: 150px;
+    }
+    &__title {
+        @include TextStyle($fw: 700, $fs: 44px, $lh: 100%, $clr:var(--clr-link));
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    &__content {
+        @include TextStyle($fw: 400, $fs: 18px, $lh: 100%, $clr:var(--clr-gray-opacity80));
+        text-align: center;
+    }
+
+    &__img {
+        padding-right: 10px;
+    }
+}

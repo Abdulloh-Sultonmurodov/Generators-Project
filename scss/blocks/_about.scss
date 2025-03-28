@@ -4,22 +4,19 @@
     justify-content: space-between;
   }
   .about-text-wrapper h2 {
+    @include TextStyle($fw: 700, $fs: 48px, $lh: 100%, $clr:var(--clr-black));
     width: 542px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
     letter-spacing: 0%;
   }
   .about-text-wrapper p {
+    @include TextStyle($fw: 400, $fs: 18px, $lh: 100%, $clr:var(--clr-black));
     width: 542px;
     padding: 16px 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
     letter-spacing: 0%;
   }
   .about-text-wrapper a {
     @include Display($Justify: start);
+    @include TextStyle($fw: 700, $fs: 18px, $lh: 100%, $clr:var(--clr-white));
     width: 196px;
     height: 52px;
     margin: 79px 0 0 344px;
@@ -27,12 +24,7 @@
     padding: 15px 48px;
     border-radius: 6px;
     background-color: #4762ff;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 100%;
     text-align: center;
-    color: var(--clr-white);
-    transition: all 0.4s;
   }
   .about-text-wrapper a:hover {
     cursor: pointer;

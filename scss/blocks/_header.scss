@@ -1,7 +1,13 @@
+.header-site {
+  position: fixed;
+  top: 0;
+  background-color: var(--clr-white);
+  width: 100%;
+}
 .header-top {
-  @include Display();
+  @include Display($Justify: end, $direction:row);
     height: 72px;
-    padding: 26px;
+    padding: 26px 170px;
     gap: 20px;
     border-bottom: 1px solid #3333331a;
   }
@@ -12,18 +18,11 @@
   }
    
   .header-top p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: var(--clr-gray-opacity70);
+    @include TextStyle($fw: 400, $fs: 16px, $lh: 100%, $clr:var(--clr-gray-opacity70));
   }
   
   .header-top p ~ a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: var(--clr-gray-opacity70);
-    transition: all 0.3s;
+    @include TextStyle($fw: 400, $fs: 16px, $lh: 100%, $clr:var(--clr-gray-opacity70));
   }
   
   .header-top p ~ a:hover {
@@ -39,8 +38,9 @@
   }
   
   .header-bottom {
-   @include Display($Justify:space-between);
+   @include Display($Justify:space-around);
     padding: 18px 0;
+    border-bottom: 1px solid var(--clr-gray-opacity10);
   }
   
   .header-bottom div {
@@ -53,12 +53,9 @@
   }
   
   .header-navbar a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
+    @include TextStyle($fw: 500, $fs: 16px, $lh: 100%, $clr:var(--clr-link));
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: var(--clr-link);
   }
   .header-navbar a:hover {
     cursor: pointer;
