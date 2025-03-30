@@ -31,10 +31,61 @@
   }
   
   .header-top-wrapper {
-    border-left: 1px solid #3333331a;
-    padding-left: 9px;
-    padding-right: 9px;
+    position: relative;
     @include Display($Justify:start);
+    border-left: 1px solid #3333331a;
+    padding: 14px 11px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    &:hover {
+      background-color: var(--clr-hover);
+      border-left: 1px solid var(--clr-white);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      color: var(--clr-white);
+    }
+
+    &:hover > .header-top__popup {
+      height: 88px;
+      padding: 5px;  
+    }
+    & > div > span ~ svg {
+      transition: transform 0.3s;
+    }
+
+    &:hover > div > span ~ svg {
+      transform: rotate(180deg);
+    }
+  }
+  .header-top__popup {
+    position: absolute;
+    background-color: var(--clr-hover);
+    top: 46px;
+    width: 100%;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    & >li {
+      text-align: center;
+      padding: 10px 0;
+      color: var(--clr-white);
+
+      &:hover {
+        background-color: var(--clr-white);
+        border-radius: 10px;
+        color: var(--clr-black);
+      }
+    }
+  }
+  .header-top-lang-wrapper {
+    @include Display($Justify:start);
+    gap: 5px;
   }
   
   .header-bottom {
