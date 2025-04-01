@@ -1,0 +1,23 @@
+.footer-section {
+    background-color: var(--clr-footer-black);
+}
+.footer-wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrapper a {
+    @include TextStyle($fw:500, $fs:20px, $lh:100%, $clr:var(--clr-white));
+}
+.footer-list-wrapper {
+    display: flex;
+}
+.footer-list {
+    width: 285px;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-input input {
+    display: flex;
+}

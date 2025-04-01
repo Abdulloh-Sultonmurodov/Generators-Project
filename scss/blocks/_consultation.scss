@@ -1,0 +1,62 @@
+.consultation-section {
+    height: 687px;
+    background-image: url(../../images/Factory-full-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.consultation-wrapper {
+    padding: 118px 0px 0px 560px;
+}
+.consultation {
+    width: 607px;
+    height: 479px;
+    padding: 20px 35px 40px 36px;
+    background-color: var(--clr-hover);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+
+    &__title {
+        height: 98px;
+        @include TextStyle($fw:700px, $fs:40px, $lh:100%, $clr:var(--clr-white),);
+        text-align: center;
+    }
+
+    &__content {
+        @include TextStyle($fw:400px, $fs:18px, $lh:100%, $clr:var(--clr-white-opacity80),);
+        padding: 10px 0 25px 0;
+        text-align: center;
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    &__input input {
+        width: 532px;
+        height: 56px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--clr-hover-light);
+    }
+
+    &__input input::placeholder {
+        padding-left: 25px;
+        @include TextStyle($fw:400px, $fs:16px, $lh:100%, $clr:var(--clr-white),);
+    }
+}
+
+.input-submit {
+    width: 532px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 14px;
+    background-color: var(--clr-white);
+    @include TextStyle($fw:700px, $fs:18px, $lh:100%, $clr:var(--clr-hover));
+    text-align: center;
+}
